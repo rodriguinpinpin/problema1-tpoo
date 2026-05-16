@@ -13,3 +13,11 @@ def suma(valor, lista):
         
         return suma(valor, restante)
 
+# Ejemplo de uso
+numeros = [3, 8, 1, 10, 5, 2]
+limite = 5
+
+resultado = suma(limite, numeros)
+print(f"La suma de los valores mayores o iguales a {limite} es: {resultado}")
+
+
