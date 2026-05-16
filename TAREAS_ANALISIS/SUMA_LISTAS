@@ -1,0 +1,15 @@
+def suma(valor, lista):
+    
+    if not lista:
+        return 0
+    
+    primer_elemento = lista[0]
+    restante = lista[1:]
+    
+    if primer_elemento >= valor:
+        
+        return primer_elemento + suma(valor, restante)
+    else:
+        
+        return suma(valor, restante)
+
