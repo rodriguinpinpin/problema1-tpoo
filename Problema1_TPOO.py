@@ -20,13 +20,8 @@ def main():
     arreglo = [random.randint(10, 999) for _ in range(tamaño)]
     
     print("Arreglo generado:", arreglo)
-    
-    promedio = buscar_multiplos_de_3(arreglo, 0, float('-inf'), float('inf'))
-    
-    if promedio is not None:
-        print("El promedio entre el máximo y mínimo valor múltiplo de 3 es:", promedio)
-    else:
-        print("No se encontraron múltiplos de 3 en el arreglo.")
+    resultado = buscar_multiplos_de_3(arreglo, 0, float('-inf'), float('inf'))
+    print("El promedio entre el máximo y mínimo valor múltiplo de 3 es:", resultado)
+if __name__ == "__main__":    main()
 
-if __name__ == "__main__":
-    main()
+    
